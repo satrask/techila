@@ -28,6 +28,18 @@ app.get('/jobs', function(req, res)
     res.render('pages/jobs', {jobs: obj})
 });
 
+app.get('/job', function(req, res)
+{
+    var obj = JSON.parse(fs.readFileSync('ratman.json', 'utf8'));
+
+    var result = obj.filter((value, index, array) =>
+    {
+        return value.LocationID == req.query.id;
+    });
+
+    res.render('pages/job', {job: result[0]});
+});
+
 var port = process.env.PORT || 1337;
 app.listen(port);
 
