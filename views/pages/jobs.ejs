@@ -1,3 +1,13 @@
+<!--
+
+"LocationID" : "TAC-3284291",
+		"Location" : "123 Main St, Tacoma WA",
+		"TrapAmount" : "10",
+		"Value" : "$10.00 ",
+		"Status" : "ASSIGNED"
+
+-->
+
 <html>
     <head>
         <% include ../partials/head %>
@@ -11,27 +21,29 @@
         <div class="row">
         <div class="card">
         <div class="card-body">
-            <h4 class="card-title">999 3rd Ave, Seattle, WA - 98101</h4>
-                <p class="card-description">Here are the traps that you have set in this location. A disarmed device means that a rodent has been trapped.</p>
+            <h4 class="card-title">Current Job Status</h4>
+                <p class="card-description">Here are the current jobs.</p>
         <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Device ID</th>
+                        <th>Location ID</th>
                         <th>Location</th>
-                        <th>Last Checked</th>
+                        <th>Amount of Traps</th>
+                        <th>Cost</th>
                         <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <% devices.forEach(function(dev) {%>
+                    <% jobs.forEach(function(job) {%>
                       <tr>
-                          <td><%= dev.DeviceID %></td> 
-                          <td><%= dev.Location %></td> 
-                          <td><%= dev.LastChecked %></td> 
+                          <td><%= job.LocationID %></td> 
+                          <td><%= job.Location %></td> 
+                          <td><%= job.TrapAmount %></td> 
+                          <td><%= job.Value %></td> 
                           <td>
-                                <label class="badge <%= (dev.Status == "DISARMED") ? "badge-danger" : "badge-success" %>">
-                                        <%= dev.Status %>
+                                <label class="badge <%= (job.Status == "FAILED") ? "badge-danger" : "badge-success" %>">
+                                        <%= job.Status %>
                                 </label>
                               
                           </td>
