@@ -36,14 +36,14 @@ app.get('/resource', function(req, res)
 
 app.get('/job', function(req, res)
 {
-    var obj = JSON.parse(fs.readFileSync('ratman.json', 'utf8'));
+    var obj = JSON.parse(fs.readFileSync('smartcontracts.json', 'utf8'));
 
     var result = obj.filter((value, index, array) =>
     {
         return value.LocationID == req.query.id;
     });
 
-    res.render('pages/job', {job: result[0]});
+    res.render('pages/job', {contracts: result[0].Contracts});
 });
 
 var port = process.env.PORT || 1337;
