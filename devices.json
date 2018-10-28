@@ -1,0 +1,68 @@
+[
+    {
+		"DeviceID" : "SEA-110101",
+		"Location" : "Northeast Corner 1",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110102",
+		"Location" : "Northeast Corner 2",
+		"LastChecked" : "10/27/2018",
+		"Status" : "DISARMED"
+	},
+	{
+		"DeviceID" : "SEA-110103",
+		"Location" : "Northeast Corner 3",
+		"LastChecked" : "10/27/2018",
+		"Status" : "DISARMED"
+	},
+	{
+		"DeviceID" : "SEA-110104",
+		"Location" : "Northeast Corner 4",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110109",
+		"Location" : "Northeast Corner 5",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110114",
+		"Location" : "Northeast Corner 6",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110119",
+		"Location" : "Northeast Corner 7",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110128",
+		"Location" : "Northeast Corner 8",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110139",
+		"Location" : "Northeast Corner 9",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110150",
+		"Location" : "Northeast Corner 8",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	},
+	{
+		"DeviceID" : "SEA-110169",
+		"Location" : "Northeast Corner 11",
+		"LastChecked" : "10/27/2018",
+		"Status" : "ARMED"
+	}
+]

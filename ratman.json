@@ -1,0 +1,37 @@
+[
+    {
+		"LocationID" : "SEA-1101101",
+		"Location" : "999 3rd Ave, Seattle WA",
+		"TrapAmount" : "4",
+		"Value" : "$8.00 ",
+		"Status" : "ASSIGNED"
+	},
+	{
+		"LocationID" : "BEL-9832010",
+		"Location" : "999 108th St, Bellvue WA",
+		"TrapAmount" : "2",
+		"Value" : "$5.00 ",
+		"Status" : "ASSIGNED"
+	},
+	{
+		"LocationID" : "TAC-3284291",
+		"Location" : "123 Main St, Tacoma WA",
+		"TrapAmount" : "10",
+		"Value" : "$10.00 ",
+		"Status" : "ASSIGNED"
+	},
+	{
+		"LocationID" : "KIR-2393422",
+		"Location" : "Kirkland Community Center",
+		"TrapAmount" : "5",
+		"Value" : "N/A",
+		"Status" : "FAILED"
+	},
+	{
+		"LocationID" : "REN-313832",
+		"Location" : "Renton Sports Facility",
+		"TrapAmount" : "1",
+		"Value" : "$4.00 ",
+		"Status" : "ASSIGNED"
+	}
+]
