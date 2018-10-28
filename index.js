@@ -28,6 +28,12 @@ app.get('/jobs', function(req, res)
     res.render('pages/jobs', {jobs: obj})
 });
 
+app.get('/resource', function(req, res)
+{
+    //var obj = JSON.parse(fs.readFileSync('ratman.json', 'utf8'));
+    res.render('pages/resource');//, {jobs: obj})
+});
+
 app.get('/job', function(req, res)
 {
     var obj = JSON.parse(fs.readFileSync('ratman.json', 'utf8'));
