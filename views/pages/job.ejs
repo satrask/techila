@@ -1,10 +1,17 @@
 <!--
 
-"LocationID" : "TAC-3284291",
-		"Location" : "123 Main St, Tacoma WA",
-		"TrapAmount" : "10",
-		"Value" : "$10.00 ",
-		"Status" : "ASSIGNED"
+[
+    {
+        "LocationID" : "KIR-2393422",
+        "Contracts" : 
+        [
+            {
+                "LicenseType" : "Rodent Removal",
+                "ProposedRate" : "$5.00"
+            }
+        ]
+    }
+]
 
 -->
 
@@ -21,32 +28,34 @@
         <div class="row">
         <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Current Job Status</h4>
-                <p class="card-description">Here are the current jobs.</p>
+            <h4 class="card-title">Available Resources</h4>
+                <p class="card-description">Here are the available resources to complete your job.</p>
         <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Location ID</th>
-                        <th>Location</th>
-                        <th>Amount of Traps</th>
-                        <th>Cost</th>
-                        <th>Status</th>
+                        <th>Resource Number</th>
+                        <th></th>
+                        <th>LicenseType</th>
+                        <th>ProposedRate</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <% var i = 1; %>
+                    <% contracts.forEach(function(contract) {%>
+                        
                       <tr>
-                          <td><%= job.LocationID %></td> 
-                          <td><%= job.Location %></td> 
-                          <td><%= job.TrapAmount %></td> 
-                          <td><%= job.Value %></td> 
+                          <td><%= i %></td>
+                          <td style="color: red">New Resource</td>
+                          <td><%= contract.LicenseType %></td> 
+                          <td><%= contract.ProposedRate %></td> 
                           <td>
-                                <label class="badge <%= (job.Status == "FAILED") ? "badge-danger" : "badge-success" %>">
-                                        <%= job.Status %>
-                                </label>
-                              
-                          </td>
+                            <button type="button" class="btn btn-primary btn-fw">Contact</button>
+                            <button type="button" class="btn btn-secondary btn-fw">Ignore</button>
+                        </td>
                         </tr>
+                    <% i++;}); %>
                 </tbody>
             </table>
         </div>
