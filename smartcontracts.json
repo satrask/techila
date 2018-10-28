@@ -4,6 +4,7 @@
         "Contracts" : 
         [
             {
+                "ContractID" : "1",
                 "LicenseType" : "Rodent Removal",
                 "ProposedRate" : "$5.00"
             }

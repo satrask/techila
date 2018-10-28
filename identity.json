@@ -1,0 +1,24 @@
+[
+    {
+        "ResourceID" : "1",
+        "FirstName" : "Ratman",
+        "LastName" : "Payne",
+        "JobTitle" : "Rodent Killer",
+        "WorkEmail" : " ",
+        "PhoneNumber" : " ",
+        "CompanyNumber" : " ",
+        "WebsiteAddress" : " ",
+        "BusinessUnit" : " ",
+        "StreetAddressLine1" : "123 Rodent Alley",
+        "StreetAddressLine2" : " ",
+        "City" : "Ratomish",
+        "Country" : "USA",
+        "State" : " ",
+        "ZipCode" : " ",
+        "Certifications" : 
+        [
+            "Rodent Removal",
+            "List of Jobs Completed"
+        ]
+    }
+]

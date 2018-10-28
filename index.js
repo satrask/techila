@@ -28,10 +28,22 @@ app.get('/jobs', function(req, res)
     res.render('pages/jobs', {jobs: obj})
 });
 
-app.get('/resource', function(req, res)
+app.get('/hired', function(req, res)
 {
     //var obj = JSON.parse(fs.readFileSync('ratman.json', 'utf8'));
-    res.render('pages/resource');//, {jobs: obj})
+    res.render('pages/hired');//, {jobs: obj})
+});
+
+app.get('/resource', function(req, res)
+{
+    var obj = JSON.parse(fs.readFileSync('identity.json', 'utf8'));
+
+    var result = obj.filter((value, index, array) =>
+    {
+        return value.ResourceID == req.query.id;
+    });
+
+    res.render('pages/resource', {identity: result[0]});//, {jobs: obj})
 });
 
 app.get('/job', function(req, res)
